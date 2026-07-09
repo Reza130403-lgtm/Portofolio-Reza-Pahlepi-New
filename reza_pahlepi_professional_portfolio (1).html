@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <title>Reza Pahlepi | Business & Data Analyst</title>
+    <meta name="description" content="Professional portfolio of Reza Pahlepi, a Senior Business & Data Analyst specializing in Business Intelligence, automated pipeline engineering, and predictive modeling for data-driven decision support.">
+    <meta name="keywords" content="Reza Pahlepi, Business Analyst, Data Analyst, Business Intelligence, Data Engineer, Power BI, SQL, Python, Linear, Stripe, Vercel Portfolio">
+    <meta name="author" content="Reza Pahlepi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reza Pahlepi | Business & Data Analyst">
+    <meta property="og:description" content="Specializing in transforming complex datasets into highly interactive business intelligence assets and data-driven decision systems.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#030712',
+                        darkCard: '#0B0F19',
+                        darkBorder: '#1E293B',
+                        accentBlue: '#0ea5e9',
+                        accentTeal: '#0d9488',
+                        accentEmerald: '#10b981',
+                        slateMuted: '#94a3b8'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #030712;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Modern tech grid pattern (Linear / Stripe style) */
+        .tech-grid {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+        }
+
+        /* Clean glassmorphism styling */
+        .glass-panel {
+            background: rgba(11, 15, 25, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Interactive Custom Hover Aura */
+        #cursor-aura {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.05) 0%, rgba(14, 165, 233, 0) 70%);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            transition: width 0.3s, height 0.3s;
+        }
+
+        /* Custom minimal scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0ea5e9;
+        }
+
+        /* Orbiting floating skill nodes */
+        @keyframes floatOrbit {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .orbital-node {
+            animation: floatOrbit 6s ease-in-out infinite;
+        }
+
+        /* Typing cursor effect */
+        @keyframes blink {
+            50% { border-color: transparent }
+        }
+        .cursor-blink {
+            animation: blink 0.8s step-end infinite;
+        }
+    </style>
+</head>
+<body class="text-slate-300 tech-grid selection:bg-sky-500/30 selection:text-white">
+
+    <!-- Custom Mouse Hover Light Aura -->
+    <div id="cursor-aura" class="fixed top-0 left-0 z-0 hidden lg:block rounded-full"></div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-40 w-full glass-panel border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand logo identification -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="h-10 w-10 rounded border border-white/10 bg-darkCard flex items-center justify-center text-white font-mono font-bold text-base shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-transform group-hover:scale-105">
+                        RP
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white font-extrabold text-sm tracking-wider font-mono">REZA PAHLEPI</span>
+                        <span class="text-[9px] text-sky-400 font-mono tracking-widest uppercase">Business & Data Analyst</span>
+                    </div>
+                </a>
+
+                <!-- Desktop navigation options -->
+                <div class="hidden md:flex items-center space-x-8 font-mono text-xs uppercase tracking-widest">
+                    <a href="#about" class="text-slate-400 hover:text-white transition-colors duration-200">About</a>
+                    <a href="#experience" class="text-slate-400 hover:text-white transition-colors duration-200">Experience</a>
+                    <a href="#projects" class="text-slate-400 hover:text-white transition-colors duration-200">Projects</a>
+                    <a href="#skills" class="text-slate-400 hover:text-white transition-colors duration-200">Skills</a>
+                    <a href="#research" class="text-slate-400 hover:text-white transition-colors duration-200">Research</a>
+                    <a href="#contact" class="text-slate-400 hover:text-white transition-colors duration-200">Contact</a>
+                </div>
+
+                <!-- CV action controls -->
+                <div class="hidden md:block">
+                    <a href="https://drive.google.com/file/d/1wEvxfK0lHiXYlRFYOTYO1Hq37NdshGh8/view?usp=sharing" target="_blank" class="px-5 py-2.5 rounded bg-sky-500/10 hover:bg-sky-500/20 border border-sky-500/30 text-sky-400 text-xs font-mono font-semibold tracking-widest transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-download text-[10px]"></i> Download CV
+                    </a>
+                </div>
+
+                <!-- Responsive menu controls -->
+                <div class="md:hidden">
+                    <button id="mobile-toggle" class="text-slate-400 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile dropout drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-darkBg/95 backdrop-blur-lg px-6 py-8 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-sky-400 font-mono text-sm uppercase">About</a>
+            <a href="#experience" class="block text-slate-300 hover:text-sky-400 font-mono text-sm uppercase">Experience</a>
+            <a href="#projects" class="block text-slate-300 hover:text-sky-400 font-mono text-sm uppercase">Projects</a>
+            <a href="#skills" class="block text-slate-300 hover:text-sky-400 font-mono text-sm uppercase">Skills</a>
+            <a href="#research" class="block text-slate-300 hover:text-sky-400 font-mono text-sm uppercase">Research</a>
+            <a href="#contact" class="block text-slate-300 hover:text-sky-400 font-mono text-sm uppercase">Contact</a>
+            <div class="pt-4 border-t border-white/5">
+                <a href="https://drive.google.com/file/d/1wEvxfK0lHiXYlRFYOTYO1Hq37NdshGh8/view?usp=sharing" target="_blank" class="w-full text-center block px-5 py-3 rounded bg-sky-500 text-white font-mono font-bold text-xs uppercase tracking-wider">
+                    <i class="fa-solid fa-download mr-2"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SCREEN SECTION -->
+    <header class="relative min-h-[calc(100vh-80px)] flex items-center justify-center px-6 lg:px-8 overflow-hidden py-10">
+        <!-- Accent light source backdrops -->
+        <div class="absolute top-1/4 right-1/4 w-[450px] h-[450px] bg-sky-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-[350px] h-[350px] bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
+            
+            <!-- Left Data Copywriting block -->
+            <div class="lg:col-span-7 space-y-6 text-left">
+                
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-sky-500/5 border border-sky-500/20">
+                    <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                    <span class="text-[10px] font-mono tracking-widest uppercase text-sky-400">Business & Data Analytics Portfolio</span>
+                </div>
+
+                <div class="space-y-3">
+                    <span class="text-xs font-mono tracking-widest text-slate-500 uppercase block">Data-Driven Business Solutions</span>
+                    <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-white leading-none">
+                        REZA PAHLEPI
+                    </h1>
+                    
+                    <!-- Core Analytics Subtitle Tagging -->
+                    <div class="h-8 flex items-center">
+                        <span class="text-sm font-mono text-sky-400 uppercase tracking-widest mr-2">// </span>
+                        <span id="typed-text" class="text-lg sm:text-xl font-bold font-mono text-slate-100 border-r-2 border-sky-400 pr-1 cursor-blink">Business & Data Analyst</span>
+                    </div>
+                </div>
+
+                <p class="text-base text-slate-400 max-w-xl leading-relaxed">
+                    I translate complex data architectures into clear business intelligence pipelines. From financial risk modeling and market expansion assessments to supply chain forecasting, I build tools that empower cross-functional teams to make accurate, data-backed decisions.
+                </p>
+
+                <!-- Responsive Quick Social Links -->
+                <div class="flex items-center gap-4 py-2 border-y border-white/5 max-w-xl">
+                    <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Global channels:</span>
+                    <div class="flex gap-4 text-slate-400 text-lg">
+                        <a href="https://www.linkedin.com/in/rezapahlepi1304/" target="_blank" class="hover:text-sky-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Reza130403-lgtm" target="_blank" class="hover:text-white transition-colors" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:fahlevir199@gmail.com" class="hover:text-red-400 transition-colors" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/6281273934394" target="_blank" class="hover:text-green-400 transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Primary CTA triggers -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+                    <a href="#projects" class="w-full sm:w-auto text-center px-8 py-3.5 rounded bg-sky-500 hover:bg-sky-600 text-white font-mono font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.3)]">
+                        View Projects
+                    </a>
+                    <a href="https://drive.google.com/file/d/1wEvxfK0lHiXYlRFYOTYO1Hq37NdshGh8/view?usp=sharing" target="_blank" class="w-full sm:w-auto text-center px-8 py-3.5 rounded bg-darkCard hover:bg-white/5 border border-white/10 text-slate-300 font-mono font-bold text-xs uppercase tracking-wider transition-all">
+                        <i class="fa-solid fa-file-pdf text-red-500 mr-2"></i> Download CV
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto text-center px-6 py-3.5 text-xs font-mono font-bold uppercase tracking-wider hover:text-sky-400 transition-colors">
+                        Get in Touch <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Interactive Orbital Image block -->
+            <div class="lg:col-span-5 flex justify-center relative select-none">
+                
+                <div class="w-72 h-72 sm:w-80 sm:h-80 rounded-full relative group">
+                    <!-- Spinning design elements -->
+                    <div class="absolute inset-0 rounded-full border border-dashed border-sky-500/10 animate-[spin_60s_linear_infinite]"></div>
+                    <div class="absolute -inset-4 rounded-full border border-sky-500/5 animate-[spin_30s_linear_infinite]"></div>
+                    <div class="absolute inset-1 rounded-full bg-gradient-to-br from-sky-500/5 to-indigo-500/5 opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                    
+                    <!-- Premium Framed Portrait -->
+                    <div class="w-full h-full rounded-full overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(14,165,233,0.1)] relative z-10 bg-darkCard flex items-center justify-center">
+                        <img src="https://lh3.googleusercontent.com/d/1IqGajq96HLSeh_7CDo1ZW34MhNp_Y9Vv" alt="Reza Pahlepi Portrait" class="w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x400/0b0f19/0ea5e9?text=RP';">
+                    </div>
+
+                    <!-- Glowing background accent -->
+                    <div class="absolute inset-0 bg-sky-500/5 rounded-full blur-2xl -z-10 group-hover:bg-sky-500/10 transition-all duration-500"></div>
+
+                    <!-- FLOATING SKILLS MODULES (Positioned cleanly to avoid overlap) -->
+                    <!-- Power BI -->
+                    <div class="orbital-node absolute -top-4 -left-6 z-20 px-3 py-1.5 rounded bg-darkCard border border-white/10 flex items-center gap-1.5 shadow-lg">
+                        <span class="w-1.5 h-1.5 rounded-full bg-yellow-500"></span>
+                        <span class="text-[9px] font-mono font-bold text-white">Power BI</span>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="orbital-node absolute top-12 -right-10 z-20 px-3 py-1.5 rounded bg-darkCard border border-white/10 flex items-center gap-1.5 shadow-lg" style="animation-delay: 1.5s;">
+                        <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                        <span class="text-[9px] font-mono font-bold text-white">Python</span>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="orbital-node absolute -bottom-2 -left-4 z-20 px-3 py-1.5 rounded bg-darkCard border border-white/10 flex items-center gap-1.5 shadow-lg" style="animation-delay: 3s;">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+                        <span class="text-[9px] font-mono font-bold text-white">SQL (Postgres)</span>
+                    </div>
+
+                    <!-- Business Strategy -->
+                    <div class="orbital-node absolute bottom-12 -right-12 z-20 px-3 py-1.5 rounded bg-darkCard border border-white/10 flex items-center gap-1.5 shadow-lg" style="animation-delay: 4.5s;">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span class="text-[9px] font-mono font-bold text-white">Analytics Strategy</span>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="orbital-node absolute -top-6 right-6 z-20 px-3 py-1.5 rounded bg-darkCard border border-white/10 flex items-center gap-1.5 shadow-lg" style="animation-delay: 2.2s;">
+                        <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                        <span class="text-[9px] font-mono font-bold text-white">Machine Learning</span>
+                    </div>
+
+                    <!-- ETL -->
+                    <div class="orbital-node absolute -bottom-8 right-12 z-20 px-3 py-1.5 rounded bg-darkCard border border-white/10 flex items-center gap-1.5 shadow-lg" style="animation-delay: 3.7s;">
+                        <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                        <span class="text-[9px] font-mono font-bold text-white">ETL Pipelines</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ABOUT & METRIC SUMMARY SECTION -->
+    <section id="about" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-t border-white/5 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            
+            <!-- Category Title -->
+            <div class="lg:col-span-4 sticky top-28 space-y-4">
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block">// Profile Summary</span>
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">The Data-Driven Analyst</h2>
+                <div class="h-[2px] w-12 bg-sky-500 rounded"></div>
+            </div>
+
+            <!-- Profile Summary Explanation -->
+            <div class="lg:col-span-8 space-y-8">
+                
+                <p class="text-white text-lg font-medium leading-relaxed">
+                    I build the connection between multi-pipeline operations and executive performance tracking.
+                </p>
+
+                <p class="text-slate-400 leading-relaxed">
+                    With an academic foundation in <strong class="text-white">Statistics (S1)</strong> and a GPA of 3.54, I balance rigorous quantitative methods with business intelligence needs. My experience includes engineering clean SQL databases, processing performance metrics using Python, and deploying interactive Power BI dashboards that simplify operational tracking.
+                </p>
+
+                <!-- Competency Matrices -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                    <div class="p-5 rounded bg-darkCard/50 border border-white/5 space-y-2">
+                        <span class="text-xs font-mono text-sky-400 uppercase tracking-widest block">Core Focus</span>
+                        <p class="text-slate-300 text-sm">Business Analytics, Business Intelligence, Data Visualization, SQL Pipeline Architecture, Python, Predictive Statistics, and Operational Optimization.</p>
+                    </div>
+                    <div class="p-5 rounded bg-darkCard/50 border border-white/5 space-y-2">
+                        <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest block">Impact Areas</span>
+                        <p class="text-slate-300 text-sm">Automated ETL Design, Location Feasibility, Customer Segmentation, Inventory Forecasting, and Strategic Decision Support.</p>
+                    </div>
+                </div>
+
+                <!-- KPI Counter Animations -->
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-6 pt-10 border-t border-white/5">
+                    
+                    <div class="space-y-1">
+                        <span class="text-3xl font-extrabold text-white block font-mono" data-count="10">0</span>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">Portfolio Projects</span>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-3xl font-extrabold text-white block font-mono" data-count="5">0</span>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">Sectors Covered</span>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-3xl font-extrabold text-white block font-mono" data-count="3">0</span>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">Years Experience</span>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-3xl font-extrabold text-sky-400 block font-mono" data-count="100000">0</span>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">Rows Cleaned</span>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-3xl font-extrabold text-emerald-400 block font-mono" data-count="40">0</span>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">Reporting Automated</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-24 bg-darkCard/50 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="mb-16">
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block mb-2">// Timeline</span>
+                <h2 class="text-3xl font-extrabold text-white">Professional Experience</h2>
+            </div>
+
+            <!-- Custom Consulting Timeline Grid -->
+            <div class="relative border-l border-white/10 ml-4 md:ml-0 md:grid md:grid-cols-2 md:border-l-0 md:before:absolute md:before:inset-y-0 md:before:left-1/2 md:before:w-[1px] md:before:bg-white/10 gap-y-12 gap-x-16">
+                
+                <!-- 1. BANK BENGKULU -->
+                <div class="relative md:text-right pl-8 md:pl-0 md:pr-12 group pb-12 md:pb-0">
+                    <div class="absolute -left-[6px] top-2.5 w-3 h-3 rounded-full bg-sky-500 border border-darkCard md:left-auto md:-right-[38px] group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_rgba(14,165,233,0.5)]"></div>
+                    
+                    <div class="space-y-3">
+                        <span class="text-xs font-mono font-bold text-sky-400">Sep 2024 – Sep 2025</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">Business & Data Analyst — Risk Management</h3>
+                        <p class="text-xs font-mono text-slate-500 uppercase tracking-widest">Bank Bengkulu</p>
+                        
+                        <div class="text-sm text-slate-400 space-y-2 mt-4 text-left md:text-right">
+                            <p class="leading-relaxed">Collected, processed, and analyzed operational and financial data using SQL, Excel, and Power BI to support reporting and business monitoring activities.</p>
+                            <p class="leading-relaxed">Developed automated dashboards and KPI reporting systems using Power BI, SQL, and Excel, reducing manual reporting efforts by <strong class="text-emerald-400">~40%</strong>.</p>
+                            <p class="leading-relaxed">Conducted statistical analysis and trend monitoring to identify operational patterns and support risk management decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty space layout filler -->
+                <div class="hidden md:block"></div>
+                <div class="hidden md:block"></div>
+
+                <!-- 2. FREELANCE DATA CONSULTANT -->
+                <div class="relative pl-8 md:pl-12 group pb-12 md:pb-0">
+                    <div class="absolute -left-[6px] top-2.5 w-3 h-3 rounded-full bg-purple-500 border border-darkCard md:-left-[38px] group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_rgba(168,85,247,0.5)]"></div>
+                    
+                    <div class="space-y-3">
+                        <span class="text-xs font-mono font-bold text-purple-400">Mar 2022 – Present</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Independent Data & Business Analyst</h3>
+                        <p class="text-xs font-mono text-slate-500 uppercase tracking-widest">Self-Employed Project Engagements</p>
+                        
+                        <div class="text-sm text-slate-400 space-y-2 mt-4 text-left">
+                            <p class="leading-relaxed">Delivered data analysis and business intelligence solutions for SMEs and project-based clients across operational, commercial, and F&B sectors.</p>
+                            <p class="leading-relaxed">Collected, cleaned, processed, and analyzed business and sales-related data using SQL, Excel, Power BI, and Python.</p>
+                            <p class="leading-relaxed">Conducted market analysis, forecasting, and statistical analysis to identify business trends, customer behavior, and operational insights.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:block"></div>
+                <div class="hidden md:block"></div>
+
+                <!-- 3. BPS -->
+                <div class="relative md:text-right pl-8 md:pl-0 md:pr-12 group">
+                    <div class="absolute -left-[6px] top-2.5 w-3 h-3 rounded-full bg-emerald-500 border border-darkCard md:left-auto md:-right-[38px] group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                    
+                    <div class="space-y-3">
+                        <span class="text-xs font-mono font-bold text-emerald-400">Aug 2023 – Dec 2023</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Intern Data Analyst</h3>
+                        <p class="text-xs font-mono text-slate-500 uppercase tracking-widest">BPS (Statistics Indonesia)</p>
+                        
+                        <div class="text-sm text-slate-400 space-y-2 mt-4 text-left md:text-right">
+                            <p class="leading-relaxed">Managed and validated statistical datasets to support data accuracy and reporting quality for official regional publications and analytics.</p>
+                            <p class="leading-relaxed">Developed visual reports and infographics to improve the accessibility and communication of statistical insights for stakeholders.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PORTFOLIO PROJECTS SECTION -->
+    <section id="projects" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5 relative">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6 relative z-10">
+            <div>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block mb-2">// Featured Projects</span>
+                <h2 class="text-3xl font-extrabold text-white">Portfolio Projects</h2>
+            </div>
+            
+            <!-- Category Filtering Options -->
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+                <button onclick="applyPortfolioFilter('all')" class="port-filter-btn px-4 py-2 rounded bg-sky-500 text-white font-semibold transition-all">All</button>
+                <button onclick="applyPortfolioFilter('biz-analytics')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Business Analytics</button>
+                <button onclick="applyPortfolioFilter('bi')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Business Intelligence</button>
+                <button onclick="applyPortfolioFilter('data-eng')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Data Engineering</button>
+                <button onclick="applyPortfolioFilter('ml')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Machine Learning</button>
+                <button onclick="applyPortfolioFilter('forecasting')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Forecasting</button>
+                <button onclick="applyPortfolioFilter('marketing-analytics')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Marketing Analytics</button>
+                <button onclick="applyPortfolioFilter('customer-analytics')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Customer Analytics</button>
+                <button onclick="applyPortfolioFilter('supply-chain')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Supply Chain</button>
+                <button onclick="applyPortfolioFilter('biz-strategy')" class="port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all">Business Strategy</button>
+            </div>
+        </div>
+
+        <!-- 10 Projects Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+            
+            <!-- Project 1: F&B Expansion -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="biz-strategy">
+                <div class="p-6 space-y-4">
+                    <!-- SVG Demo Visualization representing GIS Cluster -->
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-sky-400 flex items-center gap-1"><i class="fa-solid fa-location-dot"></i> GIS_DEMOGRAPHICS</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <circle cx="60" cy="30" r="16" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2" />
+                            <circle cx="60" cy="30" r="4" fill="#0ea5e9" />
+                            <circle cx="150" cy="20" r="12" fill="none" stroke="#94a3b8" stroke-width="1" />
+                            <circle cx="210" cy="35" r="24" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3" />
+                            <circle cx="210" cy="35" r="3" fill="#10b981" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>LOCATIONS: 21</span><span>RECOMMENDED: 8</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-sky-400">Business Strategy</span>
+                        <span class="px-2 py-0.5 bg-sky-500/5 border border-sky-500/20 rounded text-slate-400">GIS & Excel</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">F&B Expansion Feasibility</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Conducted location intelligence and population clustering studies to evaluate 21 prospective branch locations.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Out of 8 recommended, client launched 5 locations successfully.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('F&B Expansion Feasibility', 'Analyzed density profiles, spatial mapping of retail competitor distribution, and branch investment feasibility models in Bengkulu to streamline client\'s expansion.', 'https://docs.google.com/presentation/d/13Z68fqMC-4dsPvnRe3lNxe3XBmNxC7-Y/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 2: Supply Chain Palm Oil -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="supply-chain">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-purple-400 flex items-center gap-1"><i class="fa-solid fa-seedling"></i> PALM_YIELD_FLOW</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <path d="M10,40 C50,10 100,50 150,20 C200,5 230,45 270,10" fill="none" stroke="#a855f7" stroke-width="2" />
+                            <circle cx="150" cy="20" r="4" fill="#10b981" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>FERTILIZER: -40%</span><span>LABOUR: -25%</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-purple-400">Supply Chain</span>
+                        <span class="px-2 py-0.5 bg-purple-500/5 border border-purple-500/20 rounded text-slate-400">Python & regression</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">Supply Chain & Production</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Structured historical digital databases from manual agribusiness ledgers, designing dynamic forecast cycles.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Improved plantation net operating margins by +35%.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Supply Chain Production Analysis', 'Digitized 3 years of paper records into relational sheets. Built biometric reorder point indicators and bi-weekly harvest schedules.', 'https://docs.google.com/presentation/d/1DPMX-3MAxCJTg25N5XNIFO-vCEKmpw45/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 3: Automated ETL Pipeline -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="data-eng">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-indigo-400 flex items-center gap-1"><i class="fa-solid fa-database"></i> DWH_STG_FLOW</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <rect x="10" y="15" width="40" height="25" rx="2" fill="#1e293b" />
+                            <rect x="110" y="15" width="50" height="25" rx="2" fill="#4338ca" />
+                            <rect x="220" y="15" width="40" height="25" rx="2" fill="#065f46" />
+                            <path d="M50,28 L110,28 M160,28 L220,28" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="2" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>LAYERS: STG-DWH-DM</span><span>STEPS: 14 AUTO</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-indigo-400">Data Engineering</span>
+                        <span class="px-2 py-0.5 bg-indigo-500/5 border border-indigo-500/20 rounded text-slate-400">PostgreSQL</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition-colors">Automated ETL Pipeline</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Built relational database pipelines with table partitioning and analytical aggregates directly within staging schemas.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Decoupled reporting overhead workloads from the main transaction databases.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Automated ETL Pipeline', 'Engineered 14 staging transformation steps inside stored procedures. Constructed 5 dimension-driven analytical datamarts.', 'https://docs.google.com/presentation/d/1maOGWwzETn7LRuzIgj5ewlx0HSVsE1_h/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 4: Customer Churn Prediction -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="ml">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-brain"></i> CONFUSION_MATRIX</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <rect x="40" y="5" width="40" height="20" fill="#065f46" opacity="0.8" />
+                            <rect x="85" y="5" width="40" height="20" fill="#1e293b" />
+                            <rect x="40" y="28" width="40" height="20" fill="#1e293b" />
+                            <rect x="85" y="28" width="40" height="20" fill="#065f46" opacity="0.8" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>ROC-AUC: 0.82</span><span>RECORDS: 7,043</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-emerald-400">Machine Learning</span>
+                        <span class="px-2 py-0.5 bg-emerald-500/5 border border-emerald-500/20 rounded text-slate-400">Python & Sklearn</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Customer Churn Prediction</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Formulated predictive customer classification models to pinpoint subscribers who are at risk of leaving.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Outlined retention target maps to mitigate 30.5% revenue at risk.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Customer Churn Prediction', 'Implemented sklearn pipeline models using Logistic Regression classifiers to process telecom user behavior.', 'https://docs.google.com/presentation/d/1N4SDQIUgxSmxI_GSCT-IbS1liDiwUuz3/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 5: Flight Delay Analysis -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="biz-analytics">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-sky-400 flex items-center gap-1"><i class="fa-solid fa-plane-departure"></i> ON_TIME_RATIO</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <rect x="10" y="40" width="80" height="8" fill="#10b981" />
+                            <rect x="100" y="40" width="160" height="8" fill="#ef4444" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>ON-TIME: 76.6%</span><span>DELAYED: 23.4%</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-sky-400">Business Analytics</span>
+                        <span class="px-2 py-0.5 bg-sky-500/5 border border-sky-500/20 rounded text-slate-400">DuckDB & Python</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Flight Delay Analysis</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Processed millions of historical flight records to uncover delay distributions and route bottleneck vulnerabilities.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Proved that ~70% of delays were addressable under carrier control.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Flight Delay Analysis', 'Queried half a million US flight metrics. Isolated turnaround patterns and late inbound aircraft chains.', 'https://docs.google.com/presentation/d/1bQrlcZGfdshXaVQaRP7551l18NqzcKf_/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 6: Marketing Performance -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="marketing-analytics">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-yellow-500 flex items-center gap-1"><i class="fa-solid fa-funnel-dollar"></i> FUNNEL_CONV</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <polygon points="20,5 250,5 190,45 80,45" fill="#d97706" opacity="0.7" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>CTR: 8.51%</span><span>CVR: 22.03%</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-yellow-500">Marketing Analytics</span>
+                        <span class="px-2 py-0.5 bg-yellow-500/5 border border-yellow-500/20 rounded text-slate-400">Power BI & Excel</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-yellow-500 transition-colors">Marketing Channel Performance</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Built dynamic dashboards tracking customer acquisition funnels, CTRs, and ROI metrics across 6 key acquisition pathways.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Identified Instagram as the high-converting channel for product launch.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Marketing Channel Performance', 'Modeled customer spend behaviors across various demographic groups to identify optimal targets.', 'https://docs.google.com/presentation/d/1dsBDxNjEuBQyibnXyxg0ZmD8SUqqdOUO/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 7: Spotify A/B Testing -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="biz-analytics">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-flask"></i> AB_SIGNIFICANCE</span>
+                        <svg class="w-full h-12 text-slate-500 mt-1">
+                            <path d="M10,45 C60,45 80,5 100,5 C120,5 140,45 260,45" fill="none" stroke="#6b7280" stroke-width="1.5" />
+                            <path d="M40,45 C90,45 110,15 130,15 C150,15 170,45 260,45" fill="none" stroke="#10b981" stroke-width="2" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>CVR UPLIFT: +10.1%</span><span>p < 0.001</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-emerald-400">Business Analytics</span>
+                        <span class="px-2 py-0.5 bg-emerald-500/5 border border-emerald-500/20 rounded text-slate-400">Python & Stats</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Spotify A/B Testing</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Conducted randomized A/B experiments to evaluate the performance of alternative conversion campaign variants.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Evaluated user conversions on a balanced cohort of 100K users.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Spotify A/B Testing', 'Validated experimental significance with two-proportion Z-tests, detailing subscription transitions.', 'https://docs.google.com/presentation/d/13IRLrDIXHia4c6Gk5JkNRV27LhcIE4H3/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 8: RFM Customer Segmentation -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="customer-analytics">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-sky-400 flex items-center gap-1"><i class="fa-solid fa-users-viewfinder"></i> COHORT_RFM</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <circle cx="50" cy="15" r="8" fill="#0ea5e9" opacity="0.8" />
+                            <circle cx="130" cy="35" r="14" fill="#a855f7" opacity="0.5" />
+                            <circle cx="210" cy="20" r="10" fill="#10b981" opacity="0.6" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>CUSTOMERS: 4,338</span><span>CHAMPIONS: 65.9% REV</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-sky-400">Customer Analytics</span>
+                        <span class="px-2 py-0.5 bg-sky-500/5 border border-sky-500/20 rounded text-slate-400">Python & RFM</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">RFM Customer Segmentation</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Built behavioral segmentation pipelines grouping retail customers by purchase recency, frequency, and value metrics.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Mapped specific retention strategies for 1,450 dormant customer accounts.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('RFM Customer Segmentation', 'Evaluated £8.89M in transactional volumes to build customer retention and CLV calculation matrices.', 'https://docs.google.com/presentation/d/1SN3Ve2PHwJbq_vBtrY9fk2kgVK21tPcE/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 9: Market Basket Analysis -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300" data-category="customer-analytics">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-orange-400 flex items-center gap-1"><i class="fa-solid fa-cart-shopping"></i> APRIORI_LIFT</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <circle cx="80" cy="25" r="10" fill="#f97316" />
+                            <circle cx="180" cy="25" r="10" fill="#f97316" />
+                            <path d="M90,25 L170,25" stroke="#f97316" stroke-width="1.5" stroke-dasharray="2" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>LIFT: 2.33</span><span>TRANSACTIONS: 83K</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-orange-400">Customer Analytics</span>
+                        <span class="px-2 py-0.5 bg-orange-500/5 border border-orange-500/20 rounded text-slate-400">Python Apriori</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-orange-400 transition-colors">Market Basket Analysis</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Queried purchase history datasets using association rule learning to reveal product relationship clusters.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Outlined cross-selling combinations to boost sparse market volumes.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Market Basket Analysis', 'Modeled buying relationships on a 92K row product transaction dataset with low overall density metrics.', 'https://docs.google.com/presentation/d/11yrEycMFpl4tJJVlg2_yTjQcCmX-whyE/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 10: Time Series Forecasting -->
+            <div class="project-card bg-darkCard border border-white/5 rounded overflow-hidden flex flex-col justify-between group hover:border-sky-500/30 transition-all duration-300 animate-all" data-category="forecasting">
+                <div class="p-6 space-y-4">
+                    <div class="h-32 w-full bg-slate-950 border border-white/5 rounded p-3 relative overflow-hidden flex flex-col justify-between font-mono text-[9px] text-slate-500">
+                        <span class="text-teal-400 flex items-center gap-1"><i class="fa-solid fa-chart-line"></i> SARIMA_PROPHET</span>
+                        <svg class="w-full h-12 text-slate-500 mt-2">
+                            <path d="M10,40 L30,35 L50,38 L70,30 L90,32 L110,25 L130,28 L150,20 L170,22 L190,15 L210,18 L230,10 L250,15" fill="none" stroke="#14b8a6" stroke-width="2" />
+                            <path d="M210,18 L230,10 L250,15" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="2" />
+                        </svg>
+                        <div class="flex justify-between text-slate-600"><span>MAPE: 4.1%</span><span>SAMPLES: 144 MONTHS</span></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[10px] font-mono">
+                        <span class="text-teal-400">Forecasting</span>
+                        <span class="px-2 py-0.5 bg-teal-500/5 border border-teal-500/20 rounded text-slate-400">Prophet & SARIMA</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-teal-400 transition-colors">Time Series Forecasting</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Constructed demand forecasting models to evaluate seasonal demand trends in passenger operations.</p>
+                    <div class="p-3 bg-slate-950 border border-white/5 rounded text-xs space-y-1">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase block">Impact:</span>
+                        <span class="text-emerald-400 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Outperformed standard Holt-Winters error baselines by ~15%.</span>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 space-y-3">
+                    <button onclick="revealImmersiveModal('Time Series Forecasting', 'Analyzed trend decomposition components across seasonal flight volumes using Python frameworks.', 'https://docs.google.com/presentation/d/1_IDJSiBwLaivCrzzsYLH0ePkU5L3_ucN/embed')" class="w-full text-center text-xs font-mono font-bold tracking-wider text-white bg-sky-500 hover:bg-sky-650 py-3 rounded transition-colors flex items-center justify-center gap-1">
+                        View Project Slides <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BUSINESS ADVISORY CALCULATOR -->
+    <section class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5 relative">
+        <div class="p-8 sm:p-12 rounded bg-darkCard border border-white/5 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-64 h-64 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Summary Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block">// Data Automation Value</span>
+                    <h2 class="text-3xl font-extrabold text-white leading-tight">Data Automation Savings Simulator</h2>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Calculate how much manual reporting labor can be converted into automated business intelligence pipelines using clean database consolidation and scheduled dashboard updates.
+                    </p>
+                    <div class="p-4 bg-slate-950 border border-white/5 rounded space-y-2">
+                        <span class="text-[10px] font-mono text-slate-500 block">Baseline automation recovery rate (Bank Bengkulu baseline):</span>
+                        <span class="text-emerald-400 font-bold text-sm flex items-center gap-1.5">
+                            <i class="fa-solid fa-clock-rotate-left"></i> ~40% Operational Hours Saved
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Simulation Interactive Form -->
+                <div class="lg:col-span-7 bg-slate-950 p-6 sm:p-8 rounded border border-white/5 space-y-6">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        
+                        <!-- Manual hours -->
+                        <div class="space-y-2">
+                            <label class="text-xs font-mono text-slate-400 uppercase block">Manual Work (Hours/Week)</label>
+                            <input type="number" id="input-manual-hours" value="40" class="w-full bg-darkCard border border-white/10 rounded px-4 py-3 text-white font-mono text-sm focus:outline-none focus:border-sky-500 transition-colors">
+                        </div>
+
+                        <!-- Local cost -->
+                        <div class="space-y-2">
+                            <label class="text-xs font-mono text-slate-400 uppercase block">Average Analyst Rate ($/Hour)</label>
+                            <input type="number" id="input-hourly-rate" value="35" class="w-full bg-darkCard border border-white/10 rounded px-4 py-3 text-white font-mono text-sm focus:outline-none focus:border-sky-500 transition-colors">
+                        </div>
+
+                    </div>
+
+                    <!-- Metrics Outputs -->
+                    <div class="pt-4 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-6">
+                        
+                        <div class="text-center sm:text-left">
+                            <span class="text-[10px] font-mono text-slate-500 uppercase block">Annual Hours Recovered</span>
+                            <span id="output-hours-saved" class="text-3xl font-extrabold text-sky-400 font-mono">832</span>
+                        </div>
+
+                        <div class="text-center sm:text-right">
+                            <span class="text-[10px] font-mono text-slate-500 uppercase block">Estimated Annual Savings</span>
+                            <span id="output-dollar-saved" class="text-3xl font-extrabold text-emerald-400 font-mono">$29,120</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX SECTION -->
+    <section id="skills" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
+        <div class="mb-16">
+            <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block mb-2">// Technical Toolkit</span>
+            <h2 class="text-3xl font-extrabold text-white">Skills Matrix & Capabilities</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Category 1 -->
+            <div class="p-6 rounded bg-darkCard border border-white/5 space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-sky-500/10 flex items-center justify-center text-sky-400 text-lg">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Business Intelligence</h3>
+                </div>
+                <div class="space-y-4 text-xs font-mono">
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>Power BI (DAX & Modeling)</span><span class="text-sky-400">Advanced</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-sky-500 rounded" style="width: 90%"></div></div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>Excel (Financial Analysis)</span><span class="text-sky-400">Expert</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-sky-500 rounded" style="width: 95%"></div></div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>Dashboard Design & UX</span><span class="text-sky-400">Advanced</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-sky-500 rounded" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="p-6 rounded bg-darkCard border border-white/5 space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-purple-500/10 flex items-center justify-center text-purple-400 text-lg">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Data Infrastructure</h3>
+                </div>
+                <div class="space-y-4 text-xs font-mono">
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>SQL (PostgreSQL Queries)</span><span class="text-purple-400">Advanced</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-purple-500 rounded" style="width: 85%"></div></div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>Python (Pandas & NumPy)</span><span class="text-purple-400">Intermediate</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-purple-500 rounded" style="width: 80%"></div></div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>ETL Pipeline Design</span><span class="text-purple-400">Intermediate</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-purple-500 rounded" style="width: 75%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="p-6 rounded bg-darkCard border border-white/5 space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-lg">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Decision Support</h3>
+                </div>
+                <div class="space-y-4 text-xs font-mono">
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>Predictive Modeling</span><span class="text-emerald-400">Intermediate</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-emerald-500 rounded" style="width: 80%"></div></div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>A/B Experimentation</span><span class="text-emerald-400">Advanced</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-emerald-500 rounded" style="width: 85%"></div></div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between"><span>Statistical Inference</span><span class="text-emerald-400">Academic</span></div>
+                        <div class="h-1 w-full bg-slate-900 rounded overflow-hidden"><div class="h-full bg-emerald-500 rounded" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS SECTION -->
+    <section id="research" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+            
+            <div class="lg:col-span-4 space-y-4">
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block">// Empirical Validation</span>
+                <h2 class="text-3xl font-extrabold text-white">Publications & Achievements</h2>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Clear statistical parameters ground operational recommendations, bringing math validation to actual products.
+                </p>
+            </div>
+
+            <div class="lg:col-span-8 space-y-6">
+                
+                <!-- Thesis research -->
+                <div class="p-6 rounded bg-darkCard border border-white/5 space-y-3 hover:border-white/15 transition-colors">
+                    <span class="text-[10px] font-mono text-sky-400 uppercase tracking-widest">Published Thesis — 2025</span>
+                    <h3 class="text-lg font-bold text-white leading-snug">Biresponse Spline Truncated Nonparametric Regression Modeling for Longitudinal Data on Monthly Stock Prices of Three Private Banks in Indonesia</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Formulated multi-variable regression models to forecast monthly banking price developments while controlling for variable variance fluctuations.
+                    </p>
+                </div>
+
+                <!-- Case studies -->
+                <div class="p-6 rounded bg-darkCard border border-white/5 space-y-3 hover:border-white/15 transition-colors">
+                    <span class="text-[10px] font-mono text-sky-400 uppercase tracking-widest">Regional Analytics — 2024</span>
+                    <h3 class="text-lg font-bold text-white leading-snug">Spatial Analysis of Regional Risk Factors using Mixed Geographically Weighted Regression</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Identified relationships in spatial indicators to evaluate regional risk values using specialized localized regressions.
+                    </p>
+                </div>
+
+                <!-- Achievement awards -->
+                <div class="p-6 rounded bg-darkCard border border-white/5 flex items-start gap-4 hover:border-white/15 transition-colors">
+                    <div class="text-amber-500 text-2xl mt-1">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-[10px] font-mono text-amber-500 uppercase tracking-widest">National Optimization Study — 2022</span>
+                        <h3 class="text-lg font-bold text-white">2nd Winner - Nacoesta Essay Competition (NEC)</h3>
+                        <p class="text-sm text-slate-400">Awarded for designing optimization frameworks that improve structural operations across national organizations.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center space-y-10">
+        
+        <div class="space-y-4">
+            <span class="text-xs font-mono uppercase tracking-widest text-sky-400">// Connection Channels</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Let's Connect</h2>
+            <p class="text-sm sm:text-base text-slate-400 max-w-lg mx-auto leading-relaxed">
+                Looking to build automated reporting dashboards, set up clean transaction databases, or consult on a business optimization project? Reach out below.
+            </p>
+        </div>
+
+        <!-- Copy and Navigation Actions -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono max-w-2xl mx-auto">
+            
+            <button onclick="executeClipboardCopy()" class="flex items-center justify-between p-4 rounded bg-darkCard border border-white/5 hover:text-white hover:border-white/10 transition-all text-left">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-sky-400"></i> fahlevir199@gmail.com</span>
+                <i class="fa-solid fa-copy text-slate-500"></i>
+            </button>
+
+            <a href="https://www.linkedin.com/in/rezapahlepi1304/" target="_blank" class="flex items-center justify-between p-4 rounded bg-darkCard border border-white/5 hover:text-white hover:border-white/10 transition-all text-left">
+                <span class="flex items-center gap-2"><i class="fa-brands fa-linkedin text-sky-400"></i> LinkedIn</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-500"></i>
+            </a>
+
+            <a href="https://github.com/Reza130403-lgtm" target="_blank" class="flex items-center justify-between p-4 rounded bg-darkCard border border-white/5 hover:text-white hover:border-white/10 transition-all text-left">
+                <span class="flex items-center gap-2"><i class="fa-brands fa-github text-sky-400"></i> GitHub</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-500"></i>
+            </a>
+
+            <a href="https://wa.me/6281273934394" target="_blank" class="flex items-center justify-between p-4 rounded bg-darkCard border border-white/5 hover:text-white hover:border-white/10 transition-all text-left">
+                <span class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-500"></i>
+            </a>
+
+        </div>
+
+        <div class="pt-6">
+            <a href="https://drive.google.com/file/d/1wEvxfK0lHiXYlRFYOTYO1Hq37NdshGh8/view?usp=sharing" target="_blank" class="px-8 py-4 rounded bg-white hover:bg-slate-200 text-slate-950 font-mono font-bold text-xs uppercase tracking-widest transition-all hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                Download Official CV
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-white/5 bg-slate-950/40 text-center text-[10px] font-mono text-slate-600 tracking-wider">
+        <p>&copy; 2026 REZA PAHLEPI. Crafted for Technical Clarity and Business Impact.</p>
+    </footer>
+
+    <!-- CASE VIEW IMMERSIVE POPUP -->
+    <div id="immersive-modal" class="fixed inset-0 z-50 bg-darkBg/95 backdrop-blur-md hidden items-center justify-end transition-all duration-300">
+        <div class="w-full max-w-2xl h-full bg-darkCard border-l border-white/10 p-6 sm:p-10 flex flex-col justify-between shadow-2xl overflow-y-auto">
+            
+            <div class="space-y-6">
+                
+                <div class="flex items-center justify-between pb-4 border-b border-white/5">
+                    <span class="text-[10px] font-mono text-sky-400 uppercase tracking-widest">// Project Slides Deck</span>
+                    <button onclick="closeImmersiveModal()" class="text-slate-400 hover:text-white text-xl focus:outline-none"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <h3 id="modal-project-title" class="text-2xl sm:text-3xl font-extrabold text-white leading-tight">Project Title</h3>
+                <p id="modal-project-desc" class="text-sm text-slate-400 leading-relaxed font-mono">Detailed explanation of target dataset.</p>
+
+                <!-- Responsive Embedded IFrame container -->
+                <div class="p-4 bg-slate-950 border border-white/5 rounded space-y-4">
+                    <div class="flex items-center justify-between text-[10px] font-mono text-slate-500">
+                        <span>LIVE GOOGLE SLIDES</span>
+                        <span class="text-sky-400"><i class="fa-solid fa-file-powerpoint text-[10px]"></i> PRESENTATION</span>
+                    </div>
+                    <div class="aspect-video w-full bg-slate-950 border border-white/5 rounded overflow-hidden">
+                        <iframe id="modal-slides-iframe" src="" frameborder="0" width="100%" height="100%" allowfullscreen="true" class="w-full h-full"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row gap-4">
+                <a id="modal-slides-action-btn" href="#" target="_blank" class="w-full text-center px-6 py-4 bg-sky-500 hover:bg-sky-600 text-white font-mono font-bold text-xs uppercase tracking-wider rounded transition-colors">
+                    Open Slides in New Tab <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                </a>
+                <button onclick="closeImmersiveModal()" class="w-full text-center px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-slate-400 hover:text-white font-mono font-bold text-xs uppercase tracking-wider rounded transition-colors">
+                    Close View
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION POPUP -->
+    <div id="toast-notif" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-[#0b0f19] border border-white/10 text-slate-200 px-5 py-3 rounded shadow-2xl flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="toast-message-text" class="text-xs font-mono">Completed</span>
+        </div>
+    </div>
+
+    <script>
+        // Mouse Aura tracking for large viewports
+        const aura = document.getElementById('cursor-aura');
+        document.addEventListener('mousemove', (e) => {
+            if (window.innerWidth >= 1024) {
+                aura.style.left = `${e.clientX}px`;
+                aura.style.top = `${e.clientY}px`;
+            }
+        });
+
+        // Mobile dropdown controls
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simplified Typing Effect
+        const typedStrings = [
+            "Business & Data Analyst",
+            "Business Intelligence Analyst",
+            "Data Analytics Expert",
+            "Decision Support Engineer"
+        ];
+        let stringIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typedTextContainer = document.getElementById('typed-text');
+
+        function executeTypingEngine() {
+            const currentText = typedStrings[stringIndex];
+            if (isDeleting) {
+                typedTextContainer.innerText = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedTextContainer.innerText = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typingSpeed = isDeleting ? 40 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typingSpeed = 2500;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                stringIndex = (stringIndex + 1) % typedStrings.length;
+                typingSpeed = 500;
+            }
+
+            setTimeout(executeTypingEngine, typingSpeed);
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            executeTypingEngine();
+            executeKpiCounterEngine();
+        });
+
+        // Safe Clipboard copy with toast notification
+        function executeClipboardCopy() {
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = "fahlevir199@gmail.com";
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            showToastNotification("Email copied to clipboard!");
+        }
+
+        function showToastNotification(message) {
+            const toast = document.getElementById('toast-notif');
+            const toastText = document.getElementById('toast-message-text');
+            toastText.innerText = message;
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // Project filtering layout
+        function applyPortfolioFilter(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const filterBtns = document.querySelectorAll('.port-filter-btn');
+
+            filterBtns.forEach(btn => {
+                if(btn.getAttribute('onclick').includes(`'${category}'`)) {
+                    btn.className = "port-filter-btn px-4 py-2 rounded bg-sky-500 text-white font-semibold transition-all";
+                } else {
+                    btn.className = "port-filter-btn px-4 py-2 rounded bg-darkCard border border-white/5 text-slate-400 hover:text-white transition-all";
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Live ROI Value Calculator
+        const manualHoursInput = document.getElementById('input-manual-hours');
+        const hourlyRateInput = document.getElementById('input-hourly-rate');
+        const outputHoursSaved = document.getElementById('output-hours-saved');
+        const outputDollarSaved = document.getElementById('output-dollar-saved');
+
+        function recalculateSavings() {
+            const weeklyHours = parseFloat(manualHoursInput.value) || 0;
+            const rate = parseFloat(hourlyRateInput.value) || 0;
+
+            const savedHoursPerWeek = weeklyHours * 0.40; // 40% typical baseline savings
+            const annualHoursSaved = Math.round(savedHoursPerWeek * 52);
+            const annualDollarSaved = Math.round(annualHoursSaved * rate);
+
+            outputHoursSaved.innerText = annualHoursSaved.toLocaleString();
+            outputDollarSaved.innerText = `$${annualDollarSaved.toLocaleString()}`;
+        }
+        manualHoursInput.addEventListener('input', recalculateSavings);
+        hourlyRateInput.addEventListener('input', recalculateSavings);
+
+        // Immersive modal configuration
+        const immersiveModal = document.getElementById('immersive-modal');
+        const modalIframeElement = document.getElementById('modal-slides-iframe');
+        const modalProjectTitleElement = document.getElementById('modal-project-title');
+        const modalProjectDescElement = document.getElementById('modal-project-desc');
+        const modalSlidesActionBtn = document.getElementById('modal-slides-action-btn');
+
+        function revealImmersiveModal(title, description, rawSlidesUrl) {
+            modalProjectTitleElement.innerText = title;
+            modalProjectDescElement.innerText = description;
+            modalSlidesActionBtn.href = rawSlidesUrl;
+
+            if (rawSlidesUrl && rawSlidesUrl.includes('/embed')) {
+                modalIframeElement.src = rawSlidesUrl + "?start=false&loop=false&delayms=3000";
+            } else {
+                modalIframeElement.src = "about:blank";
+            }
+
+            immersiveModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImmersiveModal() {
+            immersiveModal.style.display = 'none';
+            modalIframeElement.src = "";
+            document.body.style.overflow = '';
+        }
+
+        // Custom KPI Count Animation trigger on intersection
+        function executeKpiCounterEngine() {
+            const stats = document.querySelectorAll('[data-count]');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const countTo = parseFloat(target.getAttribute('data-count'));
+                        let countNum = 0;
+                        const duration = 2000;
+                        const increment = countTo / (duration / 16);
+
+                        const updateCount = () => {
+                            countNum += increment;
+                            if (countNum < countTo) {
+                                if (countTo >= 1000) {
+                                    target.innerText = `${Math.floor(countNum / 1000)}K+`;
+                                } else if (countTo === 40) {
+                                    target.innerText = `${Math.floor(countNum)}%`;
+                                } else {
+                                    target.innerText = `${Math.floor(countNum)}+`;
+                                }
+                                requestAnimationFrame(updateCount);
+                            } else {
+                                if (countTo >= 1000) {
+                                    target.innerText = `${Math.floor(countTo / 1000)}K+`;
+                                } else if (countTo === 40) {
+                                    target.innerText = `${countTo}%`;
+                                } else {
+                                    target.innerText = `${countTo}+`;
+                                }
+                            }
+                        };
+                        updateCount();
+                        observer.unobserve(target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            stats.forEach(stat => observer.observe(stat));
+        }
+    </script>
+</body>
+</html>
